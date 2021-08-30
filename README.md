@@ -6,15 +6,7 @@
 To run the API (cd store-parts-exercise):
 
 ```
-yarn
-yarn start
-```
-
-or
-
-```
-npm install
-npm run start
+npm start
 ```
 
 To run the Angular project (cd Store-Parts):
