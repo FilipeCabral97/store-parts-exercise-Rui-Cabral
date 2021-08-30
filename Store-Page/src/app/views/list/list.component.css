@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap');
+* {
+    margin: 0;
+}
+
+#title {
+    margin: 1rem;
+}
+
+.container {
+    /* margin: 1em 2em; */
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.form {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    font-size: 15px;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    margin-right: 3px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.input-placeholder {
+    display: inline-block;
+    padding: 0.4rem;
+    background-color: #E0EAFC;
+    border-radius: 3px;
+}
+
+#first-input {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.2rem;
+}
+
+.mySelect {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    background-color: cadetblue;
+    border: 1px solid #000;
+    border-radius: 3px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 3px rgb(38, 60, 61);
+}
+
+.mySelect:hover {
+    background-color: rgb(81, 124, 126);
+}
+
+.input-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    background-color: cadetblue;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0.5rem 2rem;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 3px rgb(38, 60, 61);
+    cursor: pointer;
+}
+
+.input-btn p {
+    padding: 0;
+}
+
+.input-btn:hover {
+    background-color: rgb(81, 124, 126);
+}
+
+.input-btn:active {
+    box-shadow: 0px 1px;
+    transform: translateY(2px)
+}
+
+.part-list {
+    margin: 1rem auto;
+    list-style: none;
+    padding: 0;
+}
+
+.li-part {
+    border: 2px solid rgb(38, 60, 61);
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px;
+}
+
+.li-part:hover {
+    box-shadow: 0px 0px;
+    transform: translateY(2px);
+}
+
+.li-part+.li-part {
+    margin-top: 0.5rem;
+}
+
+.part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part p {
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 410px) {
+    .form {
+        flex-direction: column;
+    }
+
+    .mySelect {
+        padding:0.4rem;
+    }
+
+    .input-placeholder {
+        width: 120px;
+    }
+}

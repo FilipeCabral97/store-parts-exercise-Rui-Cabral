@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="form">
+        <!-- SEARCH BOX-->
+        <div class="input-placeholder">
+            <input type="text" id="first-input" placeholder="Search..." (keyup.enter)="searchClick($event)" size="7">
+            <span class="fas fa-search"></span>
+        </div>
+
+        <!-- DROPDOWN-->
+        <select class="mySelect" (change)="typeClick($event)">
+            <option *ngFor="let type of types" [value]="type"> {{ type }} </option>
+        </select>
+
+        <!-- PRICE BUTTON-->
+        <button class="input-btn" (click)="priceClick()">
+            price order
+        </button>
+    </div>
+
+    <div class="part-list" >
+        <app-item [part]="part" *ngFor="let part of parts"></app-item>
+    </div>
+</div>
